@@ -14,21 +14,7 @@ Ma configuration personnalisée Windhawk pour Windows 11.
 
 Télécharger depuis [windhawk.net](https://windhawk.net/) (version portable recommandée)
 
-### 2. Installer les mods requis
-
-Ouvrir Windhawk > Explore, puis installer :
-
-- `windows-11-taskbar-styler`
-- `windows-11-start-menu-styler`
-- `taskbar-labels`
-- `taskbar-icon-size`
-- `taskbar-clock-customization`
-- `taskbar-thumbnail-reorder`
-- `taskbar-button-click`
-- `explorer-details-better-file-sizes`
-- `icon-resource-redirect`
-
-### 3. Restaurer la configuration
+### 2. Restaurer la configuration (automatique)
 
 ```powershell
 git clone https://github.com/theflysurfer/windhawk-config.git
@@ -36,11 +22,36 @@ cd windhawk-config
 .\restore-windhawk-config.ps1 -WindhawkPath "C:\chemin\vers\Windhawk"
 ```
 
+Le script va automatiquement :
+- Télécharger tous les mods depuis GitHub
+- Copier les fichiers de configuration (.ini)
+- Proposer de lancer Windhawk
+
+### 3. Activer les mods dans Windhawk
+
+1. Ouvrir Windhawk
+2. Aller dans "Installed Mods"
+3. Cliquer "Enable" sur chaque mod
+
 ### 4. Redémarrer Explorer
 
 ```powershell
 Stop-Process -Name explorer -Force
 ```
+
+## Liste des mods
+
+| Mod | Description |
+|-----|-------------|
+| windows-11-taskbar-styler | Style transparent de la taskbar |
+| windows-11-start-menu-styler | Menu Start translucide RosePine |
+| windows-11-file-explorer-styler | Style de l'explorateur |
+| taskbar-labels | Labels sur la taskbar |
+| taskbar-icon-size | Taille des icônes |
+| taskbar-clock-customization | Personnalisation de l'horloge |
+| explorer-details-better-file-sizes | Tailles de fichiers améliorées |
+| icon-resource-redirect | Redirection des icônes |
+| + 12 autres mods | Voir restore-windhawk-config.ps1 |
 
 ## Structure
 
