@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(reg query \"HKLM\\SOFTWARE\\VMware\")",
+      "Bash(reg query \"HKLM\\SOFTWARE\\WOW6432Node\\VMware\")",
+      "Bash(dir \"C:\\Program Files (x86)\\VMware\" /s)",
+      "Bash(wmic product:*)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

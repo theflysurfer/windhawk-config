@@ -1,0 +1,13 @@
+# Executables
+*.exe
+
+# Screenshots temporaires
+taskbar-screenshot.png
+
+# Fichiers temporaires
+nul
+windhawk-registry.txt
+
+# Scripts de debug/test temporaires
+cleanup-vmware-final.ps1
+uninstall-vmware.ps1
